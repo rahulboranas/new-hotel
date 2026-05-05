@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+/* 1. Tailwind v4 mein Dark Mode 'class' se chalane ke liye ye jadoo ki line hai */
+@custom-variant dark (&:is(.dark *));
+
+/* 2. Global Light aur Dark mode ka background color */
+body {
+  @apply bg-slate-50 text-gray-900 transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
