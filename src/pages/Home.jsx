@@ -43,7 +43,7 @@ function Home() {
       <div className="grid grid-cols-4 gap-2">
         {categories.map((cat) => (
           // Box - dark:bg-gray-800 aur dark:border add kiya taaki raat ko alag dikhe
-          <Link key={cat.id} to={`/category/${cat.id}`} className="rounded-full w-full flex flex-col items-center p-2 shadow-sm hover:shadow-md transition-all bg-white dark:bg-gray-800 dark:border dark:border-gray-700">
+          <Link key={cat.id} to={`/category/${cat.id}`} className="rounded-full h-33 w-full flex flex-col items-center p-2 shadow-sm hover:shadow-md transition-all bg-white dark:bg-gray-800 dark:border dark:border-gray-700">
             <img src={cat.img} alt={cat.name} className="w-15 h-15 object-cover rounded-full" />
             <h3 className="text-center pt-2 text-xs font-semibold text-gray-700 dark:text-gray-200">{cat.name}</h3>
           </Link>
